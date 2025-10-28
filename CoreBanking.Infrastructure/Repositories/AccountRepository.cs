@@ -1,7 +1,9 @@
-﻿using CoreBankingTest.Core.Interfaces;
-using CoreBankingTest.Core.Models;
+﻿using CoreBanking.Domain.Entities;
+using CoreBanking.Domain.Interfaces;
+using CoreBanking.Domain.Models;
+using CoreBanking.Domain.ValueObjects;
 
-namespace CoreBankingTest.DAL.Repositories
+namespace CoreBanking.Infrastructure.Repositories
 {
     public class AccountRepository : IAccountRepository
     {
@@ -14,5 +16,35 @@ namespace CoreBankingTest.DAL.Repositories
         public IEnumerable<AccountModel> GetAll() => _accounts;
         public AccountModel GetById(int id) => _accounts.FirstOrDefault(a => a.Id == id);
         public void Add(AccountModel account) => _accounts.Add(account);
+
+        public Task<Account> GetByIdAsync(Guid accountId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Account> GetByAccountNumberAsync(AccountNumber accountNumber)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Account>> GetByCustomerid(Guid customerId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AddAsync(Account account)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateAsync(Account account)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> AccountNumberEsistAsync(AccountNumber accountNumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace CoreBankingTest.Core.Models
+﻿namespace CoreBanking.Domain.Models
 {
     public class AccountModel
     {

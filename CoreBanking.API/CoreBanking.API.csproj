@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoreBanking.Domain\CoreBanking.Domain.csproj" />
+    <ProjectReference Include="..\CoreBanking.Infrastructure\CoreBanking.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

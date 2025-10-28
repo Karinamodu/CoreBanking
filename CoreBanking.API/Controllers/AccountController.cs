@@ -1,4 +1,4 @@
-﻿using CoreBankingTest.Core.Interfaces;
+﻿using CoreBanking.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreBankingTest.API.Controllers
